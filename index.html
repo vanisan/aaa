@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/dist/style.css">
+    <script src="js/script.js" defer></script>
+    
+    <title>Ласкаво Просимо!</title>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-gifts"></i> ПодарунОК </a>
+    
+        <nav class="navbar">
+            <a href="#home">Головна</a>
+            <a href="#about">Деталі</a>
+            <a href="#shop">Магазин</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#message">Лист</a>
+            <a href="#blogs">Блог</a>
+        </nav>
+    
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Пошук" id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+    </header>
+
+    <section class="home" id="home">
+        <div class="slide active" style="background:url(/images/home-bg-1.gif) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>Щасливого Нового Року!</span>
+                <h3>Знижки до 60% !</h3>
+                <a href="#" class="btn">До Магазину!</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background:url(/images/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+            <div class="content">
+                <span>ЙО-ХО-ХО!</span>
+                <h3>Щасливого Різдва!</h3>
+                <a href="#" class="btn">До Магазину!</a>
+            </div>
+        </div>
+            
+        <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    </section>
+
+    <section class="category">
+ 
+        <div class="box-container">
+            <a href="#" class="box">
+                <img src="/images/category-1.png" alt="">
+                <h3>Іграшки</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="/images/category-2.png" alt="">
+                <h3>Ялинкові Іграшки</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="/images/category-3.png" alt="">
+                <h3>Ялинки</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="/images/category-4.png" alt="">
+                <h3>Гірлянди</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="/images/category-5.png" alt="">
+                <h3>Фігури</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="/images/category-6.png" alt="">
+                <h3>Декор</h3>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="/images/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <h3>Новий Рік вже тут!</h3>
+                <p>Не втрачай змогу перетворити свій дім у Новорічний Казковий Палац! Ми допоможемо обрати чудові іграшки, прикраси та подарунки кожному! Замовляй вже сьогодні та отримуй приємні знижки!</p>
+            </div>
+            <a href="" class="btn">Детальніше</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-tree"></i>
+                    <p>Новорічні Ялинки</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-cookie"></i>
+                    <p>Святкове печиво</p>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-gifts"></i>
+                    <p>Новорічні Подарунки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+
+        <h1 class="heading">Наший Магазин</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-1.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Іграшка "Гаррі Поттер"</h3>
+                    <div class="price">
+                         14 грн
+                         <span>18 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-2.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ялинкова Гірлянда</h3>
+                    <div class="price">
+                         149 грн
+                         <span>181 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-3.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Новорічне Тріо</h3>
+                    <div class="price">
+                         64 грн
+                         <span>89 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-4.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Кулька "Срібло"</h3>
+                    <div class="price">
+                         14 грн
+                         <span>19 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-5.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Новорічний Олень</h3>
+                    <div class="price">
+                         51 грн
+                         <span>79 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/product-6.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Одяг для улюбленця</h3>
+                    <div class="price">
+                         149 грн
+                         <span>199 грн</span>
+                    </div>
+                    <a href="#" class="btn">В КОШИК</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="banner">
+
+        <div class="content">
+            <span>Спеціальна Пропозиція!</span>
+            <h3>Знижки до 60% !</h3>
+            <p>Не втрачай змогу перетворити свій дім у Новорічний Казковий Палац! Ми допоможемо обрати чудові іграшки, прикраси та подарунки кожному!</p>
+            <a href="#" class="btn">До Магазину!</a>
+        </div>
+
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            Наша Галерея
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="/images/gallery-img-1.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/images/gallery-img-2.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/images/gallery-img-3.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/images/gallery-img-4.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/images/gallery-img-5.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/images/gallery-img-6.jpg" alt="">
+                <div class="content">
+                    <h3>Щасливого Різдва!</h3>
+                    <p>Вітаємо вас та ваші сімї з Зимовими Святами!</p>
+                    <a href="#" class="btn">Читати далі</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section message" id="message">
+        <form action="">
+            <h3>Напишіть нам</h3>
+            <input type="text" placeholder="Повне Ім'я" class="box">
+            <input type="email" placeholder="Поштовий Адрес" class="box">
+            <input type="number" placeholder="Телефон" class="box">
+            <textarea name="" placeholder="Ваш лист" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Відправити" class="btn">
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
