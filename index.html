@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ласкаво Просимо!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/dist/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-gifts"></i> ПодарунОК </a>
+
+    <nav class="navbar">
+        <a href="#home">Головна</a>
+        <a href="#about">Деталі</a>
+        <a href="#shop">Магазин</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#message">Відгук</a>
+        <a href="#blogs">Блог</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="ПОШУК" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="slide active" style="background:url(images/home-bg-1.png) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>З Новим Роком!</span>
+            <h3>Знижки до 60%!</h3>
+            <a href="#" class="btn">До Магазину</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background:url(images/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>ЙО-ХО-ХО</span>
+            <h3>Щасловго Різдва!</h3>
+            <a href="#" class="btn">До Магазину</a>
+        </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="images/category-1.png" alt="">
+            <h3>Іграшки</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-2.png" alt="">
+            <h3>Прикраси</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-3.png" alt="">
+            <h3>Ялинки</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-4.png" alt="">
+            <h3>Гірлянди</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-5.png" alt="">
+            <h3>Фігури</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-6.png" alt="">
+            <h3>Декор</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <div class="box">
+            <h3>Святкові знижки вже тут!</h3>
+            <p>Обирайте святкові прикраси для вашого дому та отримуйте чудові знижки вже сьогодні!</p>
+            <a href="#" class="btn">Читати</a>
+        </div>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-tree"></i>
+                <p>Ялинки</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-cookie"></i>
+                <p>Печиво та солодощі</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-gifts"></i>
+                <p>Подарунки для всіх</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="shop" id="shop">
+
+    <h1 class="heading">Наший Магазин</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Іграшка "Гаррі Поттер"</h3>
+                <div class="price"> 24 грн <span>29 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Гірлянда 4 кольори 5м.</h3>
+                <div class="price"> 144 грн <span>189 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Новорічне Тріо</h3>
+                <div class="price"> 106 грн <span>149 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-4.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Кулька Срібляста</h3>
+                <div class="price"> 11 грн <span>14 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-5.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Іграшка "Олень"</h3>
+                <div class="price"> 62 грн <span>89 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-6.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Костюм для улюбленця</h3>
+                <div class="price"> 225 грн <span>289 грн</span> </div>
+                <a href="#" class="btn">В КОШИК</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="content">
+        <span>Спеціальна пропозиція!</span>
+        <h3>Знижки до 60%!</h3>
+        <p>Тільки зараз шалені знижки на все</p>
+        <a href="#" class="btn">До Магазину</a>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> Галерея </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/gallery-img-1.jpg" alt="">
+            <div class="content">
+                <h3>Обери Подарунок</h3>
+                <p>Ми допоможемо підібрати подарунок для кожного</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-2.jpg" alt="">
+            <div class="content">
+                <h3>Святкові Розваги</h3>
+                <p>Ідеї для вашого свята</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-3.jpg" alt="">
+            <div class="content">
+                <h3>Календар свят</h3>
+                <p>Дізнайся про всі зимові свята</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-4.jpg" alt="">
+            <div class="content">
+                <h3>merry christmas</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-5.jpg" alt="">
+            <div class="content">
+                <h3>merry christmas</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-6.jpg" alt="">
+            <div class="content">
+                <h3>merry christmas</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, quasi!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- message sections starts  -->
+
+<section class="message" id="message">
+
+    <form action="">
+        <h3>Залиш відгук</h3>
+        <input type="text" placeholder="Прізвище та ім'я" class="box">
+        <input type="email" placeholder="Ел.скриня" class="box">
+        <input type="number" placeholder="Тел." class="box">
+        <textarea name="" placeholder="Повідомлення" class="box" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Відправити" class="btn">
+    </form>
+
+</section>
+
+<!-- message section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading">Наш святковий блог</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                    <h3>21</h3>
+                    <span>Гру</span>
+                </div>
+                <a href="#" class="user"> <i class="fas fa-user"></i> vanisan </a>
+                <a href="#" class="title"> Сайт працює! </a>
+                <p>Ми працюємо! Сподіваємось ми подаруємо вам зимовий натсрій.</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                    <h3>19</h3>
+                    <span>Гру</span>
+                </div>
+                <a href="#" class="user"> <i class="fas fa-user"></i> vanisan </a>
+                <a href="#" class="title"> Хостинг </a>
+                <p>Наш сайт майже готовий! Ми починаємо бета-запуск на хостинг.</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                    <h3>12</h3>
+                    <span>Гру</span>
+                </div>
+                <a href="#" class="user"> <i class="fas fa-user"></i> vanisan </a>
+                <a href="#" class="title"> Розпочато роботи </a>
+                <p>Сьогодні ми почали створювати наш чудовий магазин</p>
+                <a href="#" class="btn">Читати</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- services section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/icon-1.png" alt="">
+        <h3>Безкоштовна Доставка</h3>
+        <p>Ми гарантуємо якісну та своєчасну доставку</p>
+    </div>
+
+    <div class="box">
+        <img src="images/icon-2.png" alt="">
+        <h3>Надійна оплата</h3>
+        <p>Ми несемо відповідальність на всіх етапах</p>
+    </div>
+
+    <div class="box">
+        <img src="images/icon-3.png" alt="">
+        <h3>Підтримка 24/7</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, deserunt?</p>
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Меню</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> Головна</a>
+            <a class="link" href="#about"> <i class="fas fa-angle-right"></i>Деталі</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i>Магазин</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> Галерея</a>
+            <a class="link" href="#message"> <i class="fas fa-angle-right"></i>Повідомлення</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i>Блог</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>Контакти</h3>
+            <a class="link" href="#"> <i class="fas fa-phone"></i> +380 50 50 425 10 </a>
+            <a class="link" href="#"> <i class="fas fa-phone"></i> +380 66 87 810 96 </a>
+            <a class="link" href="#"> <i class="fas fa-envelope"></i> amvan0202@gmail.com </a>
+            <a class="link" href="#"> <i class="fas fa-map"></i> Poltava, Ukraine - 36002 </a>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Підписка</h3>
+            <p>Отримувати новини</p>
+            <form action="">
+                <input type="email" name="" placeholder="Ваша ел.скринька" id="" class="email">
+                <input type="submit" value="Підписатись" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit"> Створено <span>vanisan</span> </div>
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
